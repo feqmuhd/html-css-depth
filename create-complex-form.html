@@ -20,16 +20,24 @@
   <main>
     <form>
       <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required minlength="2"> 
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
       </div>
       <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required minlength="2">
+        <label for="booking-date">Booking Date</label>
+        <input type="date" id="booking-date" name="booking-date">
       </div>
-      <button type="submit">Login</button>
+      <div>
+        <label></label>
+        <input type="number" id="number-of-people" name="number-of-people" min="1" max="8" value="4">
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" id="agree-check" name="agree-check" required>
+          Agree to the cancellation policy.</label>
+        <button type="submit">Book Now</button>
+      </div>
     </form>
-
   </main>
 </body>
 
