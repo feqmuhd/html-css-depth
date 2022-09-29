@@ -1,5 +1,5 @@
 body {
-    background-color: #454545;
+    background-color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -8,21 +8,82 @@ body {
 }
 
 body header {
-    background-color: white;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.center {
+header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    
+}
+
+nav {
+    border-radius: 25px;
+    background: grey;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
 }
 
 a {
     color: white;
-    text-shadow: 2px 2px initial;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+    text-shadow: 2px 2px 3px black;
 }
+
+a:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0,0,0);
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0,0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+}
+
+a:active {
+    border-bottom: 3px;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
+
