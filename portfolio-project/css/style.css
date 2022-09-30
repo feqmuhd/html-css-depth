@@ -1,28 +1,24 @@
+/* Coursera Input */ 
+
 body {
-    background-color: black;
-    display: grid;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #edefee;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-body header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
+h1 {
+    font-size: 3rem;
 }
+
+h2 {font-size: 2rem;}
 
 header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-nav {
-    background-color: grey;
 }
 
 nav ul {
@@ -34,71 +30,19 @@ nav li {
     display: inline-block;
 }
 
-a {
-    color: #FFD700;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-bottom: 3px solid transparent;
-    text-shadow: 2px 2px 3px black;
-}
-
-a:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0,0,0);
-    perspective: 1000px;
-}
-
-@keyframes shake {
-    10%, 90% {
-        transform: translate3d(-1px, 0,0);
-    }
-    20%, 80% {
-        transform: translate3d(2px, 0, 0);
-    }
-    30%, 50%, 70% {
-        transform: translate3d(-2px, 0, 0);
-    }
-    40%, 60% {
-        transform: translate3d(2px, 0, 0);
-    }
-
-}
-
-a:active {
-    border-bottom: 3px;
-}
-
 section {
     display: flex;
-    gap: 0%;
-    background-color: white;
-}
-
-h1 {
-    font-size: 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 18px;
+    background-color: grey;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 article {
     flex: 1;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-section:first-child p {
-    text-align: center;
-}
-
-p {
-    text-align: justify;
+    background-color: grey;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 footer {
@@ -107,5 +51,35 @@ footer {
 
 footer div {
     flex: 1;
+}
+
+/* Our Input */
+
+header {
+    background-color: black;
+    padding: 1rem;
+    margin-left: -6%;
+    margin-right: -6%;
+    margin-top: -3rem;
+}
+
+nav {
+    background-color: black;
+    padding-top: 0.5%;
+    padding-bottom: 0.2%;
+    margin-left: -6%;
+    margin-right: -6%;
+}
+
+article h1, h2, p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: justify;
+}
+
+main {
+    background-color: grey;
+    margin-left: -6%;
+    margin-right: -6%;
 }
 
