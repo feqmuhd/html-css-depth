@@ -1,7 +1,7 @@
 /* Coursera Input */ 
 
 body {
-    background-color: #edefee;
+    background-color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -10,10 +10,12 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3rem;    
 }
 
-h2 {font-size: 2rem;}
+h2 {
+    font-size: 2rem;
+}
 
 header > img {
     display: block;
@@ -32,21 +34,26 @@ nav li {
 
 section {
     display: flex;
-    background-color: grey;
     margin-left: 6%;
     margin-right: 6%;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    margin-bottom: 20px;
 }
 
 article {
     flex: 1;
-    background-color: grey;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
+    border: 2px solid ;
+    background-color: black;
 }
 
 footer {
     display: flex;
+    margin-left: -6%;
+    margin-right: -6%;
+    margin-bottom: -3rem;
+    background-color: black;
+    padding-bottom: 5rem;
 }
 
 footer div {
@@ -61,6 +68,7 @@ header {
     margin-left: -6%;
     margin-right: -6%;
     margin-top: -3rem;
+    padding-top: 5rem;
 }
 
 nav {
@@ -69,17 +77,59 @@ nav {
     padding-bottom: 0.2%;
     margin-left: -6%;
     margin-right: -6%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px black;
 }
 
-article h1, h2, p {
+article h2, p {
     margin-right: 1rem;
     margin-left: 1rem;
     text-align: justify;
 }
 
 main {
-    background-color: grey;
     margin-left: -6%;
     margin-right: -6%;
+    background-color: white;
 }
 
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 70px;
+    font-size: 18px;
+}
+nav a:hover{
+    opacity: .5;
+    transition: .3s;
+}
+
+
+section:first-child h1 {
+    text-align: center;
+}
+section:first-child p {
+    text-align: center;
+}
+
+main h1, h2, p {
+    color: white;
+}
+
+footer h3 {
+    color: white;
+    text-align: end;
+    margin-right: 13%;
+}
+
+footer img {
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
